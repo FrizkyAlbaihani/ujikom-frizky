@@ -6,6 +6,7 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-body">
+                    <div class="card-header mb-3"><h4>Data Petugas</h4></div>
                     <div class="d-flex justify-content-end">
                         <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Tambah Jenis Petugas
@@ -16,7 +17,7 @@
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Tambah Jenis petugas</h1>
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel"><span class="mdi mdi-account-plus"></span>Tambah Jenis petugas</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                             <form action="{{ route('petugas.store') }}" method="POST">
@@ -99,30 +100,30 @@
                                                 @method('PUT')
                                                 <div class="modal-body">
                                                     <div class="row">
-                                                        <div class="col-md-6">
+                                                        
                                                             <div class="form-floating mb-3">
                                                                 <input type="text" class="form-control" value="{{ $item->name }}" name="name" id="name" placeholder="" >
                                                                 <label for="nama">Nama Petugas</label>
                                                             </div>
-                                                        </div>
+                                                        
                                                         {{-- <div class="col-md-6">
                                                             <div class="form-floating mb-3">
                                                                 <input type="text" class="form-control" value="{{ $item->username }}" name="username" id="username" placeholder="" >
                                                                 <label for="username">Username</label>
                                                             </div>
                                                         </div> --}}
-                                                        <div class="col-md-6">
+                                                        
                                                             <div class="form-floating mb-3">
                                                                 <input type="email" class="form-control" value="{{ $item->email }}"  name="email" id="email" placeholder="" >
                                                                 <label for="email">Email</label>
                                                             </div>
-                                                        </div>
-                                                        <div class="col-md-6">
+                                                        
+                                                       
                                                             <div class="form-floating mb-3">
                                                                 <input type="password" class="form-control" value="{{ $item->password }}" name="password" id="password" placeholder="" >
                                                                 <label for="password">Password</label>
                                                             </div>
-                                                        </div>
+                                                        
                                                     </div>
                                                 </div>
                                                 <div class="modal-footer">

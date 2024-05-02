@@ -13,6 +13,7 @@
     <link href="./vendor/jqvmap/css/jqvmap.min.css" rel="stylesheet">
     <link href="./css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css">
 
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
@@ -45,16 +46,12 @@
         ***********************************-->
         <div class="nav-header">
             <a href="index.html" class="brand-logo">
-                {{-- <img class="logo-abbr" src="./images/logo.png" alt="">
-                <img class="logo-compact" src="./images/logo-text.png" alt=""> --}}
-                {{-- <img class="brand-title" src="./images/logo-text.png" alt=""> --}}
+               
                 <h4 class="ml-3">🧼LAUNDRY SYSTEM</h4>
             </a>
 
             <div class="nav-control">
-                {{-- <div class="hamburger">
-                    <span class="line"></span><span class="line"></span><span class="line"></span>
-                </div> --}}
+            
             </div>
         </div>
         <!--**********************************
@@ -131,7 +128,10 @@
         <!--**********************************
             Sidebar start
         ***********************************-->
+        @guest
+        @else
         @include('components.sidebar')
+        @endguest
         <!--**********************************
             Sidebar end
         ***********************************-->

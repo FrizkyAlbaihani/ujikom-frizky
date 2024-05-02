@@ -13,6 +13,6 @@ class Konsumen extends Model
 
     public function order() 
     {
-        return $this->hasMany(Order::class);
+        return $this->hasMany(Order::class, 'id', 'id_konsumen');
     }
 }

@@ -6,6 +6,7 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-body">
+                    <div class="card-header mb-3"><h4>Jenis Pembayaran</h4></div>
                     <div class="d-flex justify-content-end">
                         <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             Tambah Jenis Pembayaran

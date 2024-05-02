@@ -21,8 +21,8 @@ return new class extends Migration
             $table->string('status_pembayaran');
             $table->integer('jumlah');
             $table->string('total_harga');
-            $table->integer('uang_bayar'); 
-            $table->integer('uang_kembalian'); 
+            // $table->integer('uang_bayar'); 
+            // $table->integer('uang_kembalian'); 
             $table->timestamps();
         });
     }

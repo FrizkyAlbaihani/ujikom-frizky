@@ -6,8 +6,9 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-body">
+                    <div class="card-header mb-3"><h4>Data Konsumen</h4></div>
                     <div class="d-flex justify-content-end">
-                        <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <button type="button" class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="mdi mdi-account-plus"></span>
                            Tambah Konsumen
                         </button>
                     </div>
